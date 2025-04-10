@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Light Mode Base Theme -->
+    <style name="Base.Theme.UnitConverter.Light" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+    </style>
+
+    <!-- Light Theme -->
+    <style name="Theme_UnitConverter_Light" parent="Base.Theme.UnitConverter.Light" />
+</resources>
