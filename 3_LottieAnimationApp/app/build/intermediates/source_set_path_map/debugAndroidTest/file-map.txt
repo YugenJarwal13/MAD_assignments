@@ -1,0 +1,6 @@
+com.example.a3_lottieanimationapp.test.app-core-1.5.0-0 C:\Users\ushaj\.gradle\caches\8.10.2\transforms\5e4f6e00bfc4839ab71ba407ed803b77\transformed\core-1.5.0\res
+com.example.a3_lottieanimationapp.test.app-annotation-experimental-1.3.0-1 C:\Users\ushaj\.gradle\caches\8.10.2\transforms\da2abf8033b54ffa69d47c27c5fcfc0a\transformed\annotation-experimental-1.3.0\res
+com.example.a3_lottieanimationapp.test.app-androidTest-2 C:\Users\ushaj\Desktop\BMU\SEM - 4\MAD\MAD_assignments\3_LottieAnimationApp\app\build\generated\res\resValues\androidTest\debug
+com.example.a3_lottieanimationapp.test.app-mergeDebugAndroidTestResources-3 C:\Users\ushaj\Desktop\BMU\SEM - 4\MAD\MAD_assignments\3_LottieAnimationApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.a3_lottieanimationapp.test.app-mergeDebugAndroidTestResources-4 C:\Users\ushaj\Desktop\BMU\SEM - 4\MAD\MAD_assignments\3_LottieAnimationApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.a3_lottieanimationapp.test.app-merged_res-5 C:\Users\ushaj\Desktop\BMU\SEM - 4\MAD\MAD_assignments\3_LottieAnimationApp\app\build\intermediates\merged_res\debugAndroidTest
