@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="units_array">
+        <item>Meters</item>
+        <item>Kilometers</item>
+        <item>Centimeters</item>
+        <item>Millimeters</item>
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Miles</item>
+    </string-array>
+</resources> 

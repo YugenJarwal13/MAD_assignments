@@ -1,5 +1,6 @@
 package com.example.a1_unitconverter_darkmode;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.CompoundButton;
@@ -12,13 +13,12 @@ public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // ✅ Use your actual defined theme names here
+        // Apply selected theme before setting content view
         if (ThemeHelper.isDarkMode(this)) {
             setTheme(R.style.Theme_UnitConverter_Dark);
         } else {
             setTheme(R.style.Theme_UnitConverter_Light);
         }
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
@@ -30,7 +30,12 @@ public class SettingsActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SharedPreferences prefs = getSharedPreferences("theme_prefs", MODE_PRIVATE);
                 prefs.edit().putBoolean("dark_mode", isChecked).apply();
-                recreate();  // Restarts activity to apply theme change
+                
+                // Restart both activities to apply theme change
+                Intent mainIntent = new Intent(SettingsActivity.this, MainActivity.class);
+                mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(mainIntent);
+                finish();
             }
         });
     }
