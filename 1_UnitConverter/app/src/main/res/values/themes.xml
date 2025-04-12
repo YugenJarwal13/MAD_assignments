@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme._1_UnitConverter" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme._1_UnitConverter" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#1E88E5</item>
+        <item name="colorPrimaryVariant">#1565C0</item>
+        <item name="colorSecondary">#42A5F5</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:windowBackground">#F5F7FA</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme._1_UnitConverter" parent="Base.Theme._1_UnitConverter" />
