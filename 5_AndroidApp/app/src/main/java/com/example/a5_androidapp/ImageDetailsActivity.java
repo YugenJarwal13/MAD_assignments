@@ -1,6 +1,8 @@
 package com.example.a5_androidapp;
 
 import android.app.AlertDialog;
+import android.content.ContentResolver;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.documentfile.provider.DocumentFile;
 
 import com.bumptech.glide.Glide;
 
@@ -19,21 +22,36 @@ import java.util.Locale;
 
 public class ImageDetailsActivity extends AppCompatActivity {
     private File imageFile;
+    private DocumentFile documentFile;
+    private boolean isUsingDocumentFile = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_details);
 
+        // Get image from intent (either path or uri)
         String imagePath = getIntent().getStringExtra("imagePath");
-        if (imagePath == null) {
-            finish();
-            return;
-        }
+        String imageUri = getIntent().getStringExtra("imageUri");
 
-        imageFile = new File(imagePath);
-        if (!imageFile.exists()) {
-            Toast.makeText(this, "Image not found", Toast.LENGTH_SHORT).show();
+        if (imagePath != null) {
+            // Standard file from internal storage
+            imageFile = new File(imagePath);
+            if (!imageFile.exists()) {
+                Toast.makeText(this, "Image not found", Toast.LENGTH_SHORT).show();
+                finish();
+                return;
+            }
+        } else if (imageUri != null) {
+            // DocumentFile from content provider
+            isUsingDocumentFile = true;
+            documentFile = DocumentFile.fromSingleUri(this, Uri.parse(imageUri));
+            if (documentFile == null || !documentFile.exists()) {
+                Toast.makeText(this, "Image not found", Toast.LENGTH_SHORT).show();
+                finish();
+                return;
+            }
+        } else {
             finish();
             return;
         }
@@ -45,14 +63,25 @@ public class ImageDetailsActivity extends AppCompatActivity {
         TextView imageDate = findViewById(R.id.imageDate);
         Button deleteButton = findViewById(R.id.deleteButton);
 
-        Glide.with(this)
-                .load(imageFile)
-                .into(imageView);
+        if (isUsingDocumentFile) {
+            Glide.with(this)
+                    .load(documentFile.getUri())
+                    .into(imageView);
 
-        imageName.setText("Name: " + imageFile.getName());
-        imagePathText.setText("Path: " + imageFile.getAbsolutePath());
-        imageSize.setText("Size: " + formatFileSize(imageFile.length()));
-        imageDate.setText("Date: " + formatDate(imageFile.lastModified()));
+            imageName.setText("Name: " + documentFile.getName());
+            imagePathText.setText("Path: " + documentFile.getUri().toString());
+            imageSize.setText("Size: " + formatFileSize(documentFile.length()));
+            imageDate.setText("Date: " + formatDate(documentFile.lastModified()));
+        } else {
+            Glide.with(this)
+                    .load(imageFile)
+                    .into(imageView);
+
+            imageName.setText("Name: " + imageFile.getName());
+            imagePathText.setText("Path: " + imageFile.getAbsolutePath());
+            imageSize.setText("Size: " + formatFileSize(imageFile.length()));
+            imageDate.setText("Date: " + formatDate(imageFile.lastModified()));
+        }
 
         deleteButton.setOnClickListener(v -> showDeleteConfirmationDialog());
     }
@@ -67,7 +96,15 @@ public class ImageDetailsActivity extends AppCompatActivity {
     }
 
     private void deleteImage() {
-        if (imageFile.delete()) {
+        boolean success = false;
+        
+        if (isUsingDocumentFile && documentFile != null) {
+            success = documentFile.delete();
+        } else if (imageFile != null) {
+            success = imageFile.delete();
+        }
+        
+        if (success) {
             Toast.makeText(this, "Image deleted", Toast.LENGTH_SHORT).show();
             finish();
         } else {
