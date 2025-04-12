@@ -1,3 +1,0 @@
-com.example.a3_lottieanimationapp.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

@@ -16,7 +16,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a7f6c26-6049-4da8-9fab-bc79a65fdd86" name="Changes" comment="" />
+    <list default="true" id="4a7f6c26-6049-4da8-9fab-bc79a65fdd86" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/java/com/example/a5_androidapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/java/com/example/a5_androidapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,11 +32,49 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\ushaj\.android\avd\Medium_Phone.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=10BE9L2EER001KK)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="3_LottieAnimationApp" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="3_LottieAnimationApp" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="3_LottieAnimationApp" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="3_LottieAnimationApp" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,6 +111,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ushaj\Desktop\BMU\SEM - 4\MAD\MAD_assignments\3_LottieAnimationApp\app\src\main\assets" />
+      <recent name="C:\Users\ushaj\Desktop\BMU\SEM - 4\MAD\MAD_assignments\3_LottieAnimationApp\app\src\main\res\raw" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,12 +203,12 @@
       <map>
         <entry key="com.example.a3_lottieanimationapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1744268469863" />
+            <CheckInfo lastCheckTimestamp="1744450698177" />
           </value>
         </entry>
         <entry key="com.example.a3_lottieanimationapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1744268469863" />
+            <CheckInfo lastCheckTimestamp="1744450698199" />
           </value>
         </entry>
       </map>
