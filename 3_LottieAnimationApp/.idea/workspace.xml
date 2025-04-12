@@ -16,14 +16,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a7f6c26-6049-4da8-9fab-bc79a65fdd86" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/java/com/example/a5_androidapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/java/com/example/a5_androidapp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_AndroidApp/app/src/main/res/values/themes.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4a7f6c26-6049-4da8-9fab-bc79a65fdd86" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +96,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ushaj/Desktop/BMU/SEM - 4/MAD/MAD_assignments/3_LottieAnimationApp/app/src/main/assets"
